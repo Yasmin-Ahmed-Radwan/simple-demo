@@ -1,0 +1,19 @@
+name: hello-and-then-deploy (2 depend jobs)
+
+on:
+  push:
+    branches: ["**"]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello World "
+
+  deploy:
+    needs: hello
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do the dependent step
+        run: echo "Deploy step runs AFTER hello "
