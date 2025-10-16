@@ -9,4 +9,4 @@ Open demo.txt and read it.
 - Keep this repo minimal for the assignment. 
  
 ## What is demo.txt? 
-It is a tiny text file to demonstrate commits and pushes. 
+It is a tiny text file to explain commits and pushes. 
